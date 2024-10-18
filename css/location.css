@@ -1,0 +1,51 @@
+header {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  text-align: center; /* Center align content */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-logo {
+  max-height: 80px;
+  margin-right: 15px;
+}
+
+.bagong-pilipinas-logo {
+  max-height: 80px;
+  margin-left: 15px;
+}
+
+.school-name {
+  font-size: 2em; /* Adjust font size as needed */
+  color: #006837; /* Dark green color */
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #006837;
+  margin-top: 20px;
+}
+
+.location-container {
+  text-align: center;
+  background-color: #006837;
+  color: white;
+  padding: 15px;
+}
+
+.maps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.map-coordinates {
+  text-align: center;
+  margin-top: 15px;
+}
