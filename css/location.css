@@ -1,7 +1,7 @@
 header {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   padding: 20px;
-  text-align: center; /* Center align content */
+  text-align: center;
 }
 
 .container {
@@ -21,8 +21,8 @@ header {
 }
 
 .school-name {
-  font-size: 2em; /* Adjust font size as needed */
-  color: #006837; /* Dark green color */
+  font-size: 2em;
+  color: #006837;
   margin: 0;
 }
 
@@ -48,4 +48,29 @@ hr {
 .map-coordinates {
   text-align: center;
   margin-top: 15px;
+}
+
+/* Media Query for smaller screens (e.g., tablets and below) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack logos and name vertically */
+  }
+
+  .school-logo,
+  .bagong-pilipinas-logo {
+    margin: 10px 0; /* Adjust margins for vertical stacking */
+  }
+
+  .school-name {
+    font-size: 1.5em; /* Reduce font size */
+  }
+
+  .maps-container {
+    margin-top: 30px; /* Reduce top margin */
+  }
+
+  .map-image {
+    width: 90%; /* Make the map image smaller */
+    height: auto;
+  }
 }

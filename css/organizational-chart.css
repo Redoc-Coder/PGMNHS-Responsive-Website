@@ -1,7 +1,7 @@
 header {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   padding: 20px;
-  text-align: center; /* Center align content */
+  text-align: center;
 }
 
 .container {
@@ -21,8 +21,8 @@ header {
 }
 
 .school-name {
-  font-size: 2em; /* Adjust font size as needed */
-  color: #006837; /* Dark green color */
+  font-size: 2em;
+  color: #006837;
   margin: 0;
 }
 
@@ -47,13 +47,13 @@ hr {
 
 .organization-member {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 20px;
 }
 
 .box {
-  background-color: #4caf50; /* Green background */
+  background-color: #4caf50;
   color: white;
   border: 2px solid darkgreen;
   padding: 20px;
@@ -61,10 +61,40 @@ hr {
 }
 
 .box h2 {
-  margin-bottom: 10px; /* Space below the heading */
+  margin-bottom: 10px;
 }
 
 .box hr {
-  border: 1px solid white; /* White horizontal line */
-  margin-bottom: 15px; /* Space below the line */
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+/* Media Query for smaller screens (e.g., tablets and below) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .school-logo,
+  .bagong-pilipinas-logo {
+    margin: 10px 0;
+  }
+
+  .school-name {
+    font-size: 1.5em;
+  }
+
+  .chart-container {
+    margin-top: 30px;
+  }
+
+  .chart-container img {
+    /* Assuming the image has the class "chart-image" */
+    width: 90%;
+    height: auto;
+  }
+
+  .organization-member {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+  }
 }

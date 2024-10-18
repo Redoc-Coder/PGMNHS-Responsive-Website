@@ -1,7 +1,7 @@
 header {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   padding: 20px;
-  text-align: center; /* Center align content */
+  text-align: center;
 }
 
 .container {
@@ -21,8 +21,8 @@ header {
 }
 
 .school-name {
-  font-size: 2em; /* Adjust font size as needed */
-  color: #006837; /* Dark green color */
+  font-size: 2em;
+  color: #006837;
   margin: 0;
 }
 
@@ -47,7 +47,7 @@ hr {
 
 .song {
   width: 45%;
-  text-align: center; /* Center align the text within each song */
+  text-align: center;
 }
 
 .song-title {
@@ -56,5 +56,31 @@ hr {
 }
 
 .song p {
-  text-align: left; /* Left align the paragraphs within each song */
+  text-align: left;
+}
+
+/* Media Query for smaller screens (e.g., tablets and below) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .school-logo,
+  .bagong-pilipinas-logo {
+    margin: 10px 0;
+  }
+
+  .school-name {
+    font-size: 1.5em;
+  }
+
+  .graduation-song {
+    flex-direction: column; /* Stack songs vertically */
+    align-items: center; /* Center the songs horizontally */
+  }
+
+  .song {
+    width: 90%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add space between songs */
+  }
 }
