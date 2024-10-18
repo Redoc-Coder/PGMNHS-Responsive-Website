@@ -31,8 +31,16 @@
           <li><a href="/organizational-chart.html">Organizational Chart</a></li>
           <li><a href="/graduation-song.html">Graduation Song</a></li>
         </ul>
+        <button
+          style="float: right"
+          class="nav-toggle"
+          onclick="toggleNavbar()"
+        >
+          ☰
+        </button>
       </div>
     </nav>
+
     <!-- End of Nav Bar -->
 
     <header>
@@ -86,4 +94,12 @@
       </div>
     </div>
   </body>
+  <script>
+    function toggleNavbar() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("show");
+      const logoContainer = document.querySelector(".logo-container");
+      logoContainer.classList.toggle("show"); // Toggle logo visibility
+    }
+  </script>
 </html>

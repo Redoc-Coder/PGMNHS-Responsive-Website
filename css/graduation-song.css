@@ -41,13 +41,14 @@ hr {
 .graduation-song {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px;
   font-family: sans-serif;
 }
 
 .song {
   width: 45%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .song-title {
